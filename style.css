@@ -29,6 +29,8 @@ header {
 .header-right a {
   margin-right: 100px;
   color: white;
+  border-style: none;
+  border: none;
 }
 
 .section {
