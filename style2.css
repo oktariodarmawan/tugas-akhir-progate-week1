@@ -3,6 +3,10 @@ body {
   font-family: "Lucida Grande";
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
 .title h2 {
   color: #0f8b8d;
   font-size: 48px;
@@ -10,6 +14,8 @@ body {
 
 .title p {
   font-size: 20px;
+  color: #143642;
+  text-align: center;
 }
 header {
   background-color: #0f8b8d;
@@ -38,13 +44,12 @@ header {
   color: white;
   list-style: none;
 }
-/* item */
-main {
-  display: flex;
-  flex-direction: column;
+
+/* menu*/
+.section {
   text-align: center;
   align-items: center;
-  margin: 100px;
+  margin: 50px 200px;
   row-gap: 50px;
 }
 
@@ -57,14 +62,36 @@ main {
 }
 
 .item-list img {
-  height: 237px;
-  width: 237px;
+  height: 150px;
+  width: 150px;
 }
 
 .item {
   background-image: url("asset/Photo\ Materials/Coffee background.png");
   background-size: cover;
   border-radius: 10px;
+  height: 237px;
+  width: 237px;
+}
+
+.price {
+  color: white;
+  text-decoration: none;
+}
+.price p {
+  text-align: center;
+  color: white;
+}
+
+.price h3 {
+  padding-top: 10px;
+}
+
+.item-list img:hover {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  bottom: 100px;
 }
 
 /* footer */
@@ -86,13 +113,17 @@ footer p {
 .footer-right {
   display: flex;
   column-gap: 100px;
-  text-align: center;
+  text-align: left;
 }
 
-ul li {
+.footer-right ul {
   list-style: none;
   text-align: center;
   color: white;
+}
+
+.footer-right p {
+  text-align: center;
 }
 
 /* store */
@@ -101,20 +132,22 @@ ul li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 50px;
+  column-gap: 20px;
 }
 
-.section {
+.sections {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 150px;
 }
 
 .address-list {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 10px;
 }
 .address {
   width: 400px;
@@ -122,6 +155,147 @@ ul li {
   border: 1px solid black;
 }
 
+.address h3,
+p {
+  text-align: left;
+  padding-left: 20px;
+  color: #143642;
+}
+
 .map {
-  margin: 150px auto;
+  padding-top: 100px;
+}
+
+.mapouter-2 {
+  display: none;
+}
+
+.mapouter-3 {
+  display: none;
+}
+
+/* contact */
+.contact {
+  align-self: flex-start;
+}
+
+.holder {
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+.howcan {
+  text-align: left;
+  padding-left: 100px;
+}
+
+input {
+  border-radius: 10px;
+}
+
+.holder {
+  padding-top: 20px;
+  padding-left: 50px;
+  column-gap: 50px;
+}
+
+.holder p {
+  width: 150px;
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #143642;
+}
+
+.holder input {
+  padding: 0 30px;
+}
+.message {
+  height: 200px;
+}
+button {
+  width: 335px;
+  height: 70px;
+  font-style: Lato;
+  font-weight: 400px;
+  line-height: 28.8px;
+  background-color: #a8201a;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin: 50px auto;
+}
+
+/* detail-page */
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  column-gap: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail h2 {
+  color: #0f8b8d;
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.detail p {
+  color: #143642;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.description button {
+  width: 300px;
+}
+
+.description {
+  align-items: start;
+  text-align: left;
+}
+
+.description p {
+  font-size: 24px;
+}
+
+.description h2 {
+  color: #0f8b8d;
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 500;
+  border-bottom: 3px solid #ec9a29;
+  width: 200px;
 }
