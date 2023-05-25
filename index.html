@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fontawesome.com/icons/envelope?f=classic&s=light" />
-    <title>Aroma</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Aroma Bumi</title>
   </head>
   <body>
     <header>
@@ -34,7 +35,7 @@
     <!-- about -->
 
     <div class="section about">
-      <div class="item-list">
+      <div class="item-list" data-aos="fade-up" data-aos-delay="1">
         <div class="item img">
           <img class="img-1" src="asset/Photo Materials/Who are we.jpg" />
         </div>
@@ -45,9 +46,9 @@
         </div>
       </div>
 
-      <div class="item-list">
+      <div class="item-list" data-aos="fade-left" data-aos-delay="100" data-aos-offset="200">
         <div class="item desc">
-          <h3>Who are we?</h3>
+          <h3>Product Showcase</h3>
           <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt assumenda exercitationem nobis, placeat nemo consequatur a amet blanditiis praesentium maiores!</h4>
           <button class="btn">See our coffees and tea!</button>
         </div>
@@ -57,13 +58,13 @@
         </div>
       </div>
 
-      <div class="item-list">
+      <div class="item-list" data-aos="fade-right" data-aos-delay="100" data-aos-offset="200">
         <div class="item img">
           <img class="img-3" src="asset/Photo Materials/Hang out with us.jpg" />
         </div>
 
         <div class="item desc">
-          <h3>Who are we?</h3>
+          <h3>Hang out with Us!</h3>
           <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt assumenda exercitationem nobis, placeat nemo consequatur a amet blanditiis praesentium maiores!</h4>
           <button class="btn">See more!</button>
         </div>
@@ -100,7 +101,7 @@
     <div class="contact">
       <h2>Ask us more!</h2>
       <p>If you have any questions or interested to cooperate with us, kindly let us know here:</p>
-      <button><a>Contact us</a></button>
+      <button><a href="contact.html">Contact us</a></button>
     </div>
 
     <footer>
@@ -122,19 +123,24 @@
         </div>
 
         <div class="footer-store">
-          <p>store</p>
+          <p>Store</p>
           <ul>
             <li>Location</li>
           </ul>
         </div>
 
         <div class="footer-contact">
-          <p>contact</p>
+          <p>Contact</p>
           <ul>
             <li>Customer Service</li>
           </ul>
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
